@@ -1,5 +1,6 @@
 package com.SamzFerg.letsmodreboot.proxy;
 
-public interface IProxy {
+public interface IProxy 
+{
 
 }
