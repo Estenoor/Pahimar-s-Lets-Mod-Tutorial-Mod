@@ -1,0 +1,10 @@
+package com.SamzFerg.letsmodreboot;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "LetsModReboot", name = "LetsModReboot", version = "1.7.10-1.0")
+
+public class LetsModReboot 
+{
+
+}
