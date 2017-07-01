@@ -17,7 +17,7 @@ public class LetsModReboot
 	@Mod.Instance(Reference.MOD_ID)
 	public static LetsModReboot instance;
 	
-	@SidedProxy(clientSide = "com.SamzFerg.letsmodreboot.proxy.ClientProxy", serverSide = "com.SamzFerg.letsmodreboot.proxy.ServerProxy")
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static IProxy proxy;
 	
 	@Mod.EventHandler
