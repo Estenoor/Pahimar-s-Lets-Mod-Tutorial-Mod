@@ -1,0 +1,6 @@
+package com.SamzFerg.letsmodreboot.configuration;
+
+public class ConfigurationHandler 
+{
+
+}
