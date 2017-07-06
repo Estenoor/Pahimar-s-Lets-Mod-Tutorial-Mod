@@ -1,6 +1,5 @@
 package com.SamzFerg.letsmodreboot;
 
-import com.SamzFerg.letsmodreboot.configuration.ConfigurationHandler;
 import com.SamzFerg.letsmodreboot.proxy.IProxy;
 import com.SamzFerg.letsmodreboot.reference.Reference;
 
@@ -24,7 +23,7 @@ public class LetsModReboot
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+		
 	}
 	
 	@Mod.EventHandler

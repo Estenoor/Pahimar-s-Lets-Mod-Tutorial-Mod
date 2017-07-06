@@ -8,4 +8,7 @@
 <fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.Instance"/>
 <fullyQualifiedTypeName name="com.SamzFerg.letsmodreboot.proxy.IProxy"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.SidedProxy"/>
+<fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+<fullyQualifiedTypeName name="com.SamzFerg.letsmodreboot.configuration.ConfigurationHandler"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.config.Configuration"/>
 </qualifiedTypeNameHistroy>
