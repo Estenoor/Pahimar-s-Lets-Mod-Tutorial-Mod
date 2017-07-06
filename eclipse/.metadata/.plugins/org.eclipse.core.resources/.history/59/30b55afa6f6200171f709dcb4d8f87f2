@@ -1,6 +1,6 @@
 package com.SamzFerg.letsmodreboot;
 
-import com.SamzFerg.letsmodreboot.handler.ConfigurationHandler;
+import com.SamzFerg.letsmodreboot.configuration.ConfigurationHandler;
 import com.SamzFerg.letsmodreboot.proxy.IProxy;
 import com.SamzFerg.letsmodreboot.reference.Reference;
 
