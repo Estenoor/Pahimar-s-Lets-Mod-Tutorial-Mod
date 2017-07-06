@@ -14,7 +14,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 
 public class LetsModReboot 
-{
+{ 
 	@Mod.Instance(Reference.MOD_ID)
 	public static LetsModReboot instance;
 	

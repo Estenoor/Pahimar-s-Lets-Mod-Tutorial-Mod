@@ -20,6 +20,6 @@ public class ModGuiConfig extends GuiConfig
 				false,
 				GuiConfig.getAbridgedConfigPath(ConfigurationHandler.configuration.toString()));
 	}
-	
-	
+
+
 }

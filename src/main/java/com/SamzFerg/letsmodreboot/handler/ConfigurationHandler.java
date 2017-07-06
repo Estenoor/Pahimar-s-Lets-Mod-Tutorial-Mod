@@ -13,7 +13,7 @@ public class ConfigurationHandler
 {
 	public static Configuration configuration;
 
-	boolean TestValue = false;
+	public static boolean TestValue = false;
 
 	public static void init(File configFile)
 	{
@@ -38,9 +38,6 @@ public class ConfigurationHandler
 
 	public void loadConfiguration()
 	{
-		//Load the configuration file
-		configuration.load();
-
 		//Read in properties from configuration file
 		TestValue = configuration.getBoolean(Configuration.CATEGORY_GENERAL, "configValue", true, "This is an example config value");
 
