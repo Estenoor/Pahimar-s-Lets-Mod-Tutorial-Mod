@@ -2,40 +2,52 @@ package com.SamzFerg.letsmodreboot.handler;
 
 import java.io.File;
 
+import com.SamzFerg.letsmodreboot.reference.Reference;
+
+import cpw.mods.fml.client.event.ConfigChangedEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
 import net.minecraftforge.common.config.Configuration;
 
 public class ConfigurationHandler 
 {
 	public static Configuration configuration;
 
+	boolean TestValue = false;
+
 	public static void init(File configFile)
 	{
 		//Create the configuration object from giving configuration file
-		configuration = new Configuration(configFile);
-		boolean configValue = false;
-
-		try
+		if (configuration == null)
 		{
-			//Load the configuration file
-			configuration.load();
-
-			//Read in properties from configuration file
-			configValue = configuration.get(Configuration.CATEGORY_GENERAL, "configValue", true, "This is an example config value").getBoolean(true);
-		}
-		catch(Exception e)
-		{
-			//Log the exception
-		}
-		finally
-		{
-			//Save the configuration file
-			if(configuration.hasChanged())
-			{
-				configuration.save();
-			}
+			configuration = new Configuration(configFile);
 		}
 
+	}
 
-		System.out.println(configValue);
+	@SubscribeEvent
+	public void onConfigurationChangedEvent(ConfigChangedEvent event)
+	{
+		if (event.modID.equalsIgnoreCase(Reference.MOD_ID))
+		{
+			loadConfiguration();
+		}
+	}
+
+
+
+	public void loadConfiguration()
+	{
+		//Load the configuration file
+		configuration.load();
+
+		//Read in properties from configuration file
+		TestValue = configuration.getBoolean(Configuration.CATEGORY_GENERAL, "configValue", true, "This is an example config value");
+
+		//Save the configuration file
+		if(configuration.hasChanged())
+		{
+			configuration.save();
+		}
 	}
 }
