@@ -1,0 +1,6 @@
+package com.SamzFerg.letsmodreboot.client.gui;
+
+public class GuiConfig extends ModGuiConfig
+{
+
+}
